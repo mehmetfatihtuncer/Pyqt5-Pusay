@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1040</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTextBrowser" name="TEXT">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>940</y>
+     <width>1831</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SIM">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>20</y>
+     <width>580</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SHOWKAMERA">
+   <property name="geometry">
+    <rect>
+     <x>1510</x>
+     <y>390</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Kameraya Bağlan</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="KAMERA">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>20</y>
+     <width>580</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="GPS">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>580</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SHOWSIM">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>390</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simülatöre Bağlan</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SHOWGPS">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>390</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Haritaya Bağlan</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="sekmeler">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>821</width>
+     <height>490</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="ana">
+    <attribute name="title">
+     <string>Özet</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>751</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="4" column="0">
+       <widget class="QLCDNumber" name="lcdNumber_3"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLCDNumber" name="lcdNumber_2"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLCDNumber" name="lcdNumber_4"/>
+      </item>
+      <item row="3" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Dist to Wp (m)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Yaw(deg)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>GroundSpeed (m/s)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Altitude (m)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLCDNumber" name="lcdNumber_6"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLCDNumber" name="lcdNumber_5"/>
+      </item>
+      <item row="5" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Vertical Speed(m/s)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>DisToMAV</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLCDNumber" name="lcdNumber">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>7.200000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="eylemler">
+    <attribute name="title">
+     <string>Eylemler</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="son">
+    <attribute name="title">
+     <string>Son Kontroller</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="gaz">
+    <attribute name="title">
+     <string>Gaz</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="durum">
+    <attribute name="title">
+     <string>Durum</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>640</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(96, 96, 96);
+border-radius: 10px;
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Otononom İniş</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>720</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(96, 96, 96);
+border-radius: 10px;
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Seyir Modu</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>800</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(96, 96, 96);
+border-radius: 10px;
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Otonom Kitlenme</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>560</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(128, 255, 0);
+border-radius: 10px;
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Otononom Kalkış</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>880</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(96, 96, 96);
+border-radius: 10px;
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Otonom Kamikaze</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
